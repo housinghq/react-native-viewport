@@ -1,6 +1,6 @@
 # Skele Components
 
-Skele's `components` package is a library of custom components that aid in building React and React Native apps.
+Skele's `components` package is a library of custom components that aid in building React and React Native apps. Clonned from @skele/component v1.0.0-alpha.39
 
 ## Available Components
 

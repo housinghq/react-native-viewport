@@ -16,7 +16,7 @@
   ],
   "author": "Kishan Patel",
   "license": "MIT",
-  "homepage": "https://netcetera.gitbooks.io/skele/",
+  "homepage": "https://github.com/housinghq/react-native-viewport.git",
   "peerDependencies": {
     "prop-types": "15.x || 16.x",
     "react": "15.x || 16.x",
