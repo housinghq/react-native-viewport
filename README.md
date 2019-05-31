@@ -60,3 +60,41 @@ render() {
 |**`onViewportEnter`**| Invoked when the component enters the viewport. | `null` |
 |**`onViewportLeave`**| Invoked when the component leaves the viewport. | `null` |
 |**`innerRef`**| Allows access to the reference of the wrapped component. | `null` |
+
+### With Placeholder
+
+A higher-order component that can be used to display a placeholder while the wrapped component is not in the viewport.
+This can improve user experience since it can serve as a mechanism for lazy loading.
+
+#### Usage
+
+```javascript
+import { Image, View } from 'react-native'
+import { Viewport } from '@skele/components'
+
+const Placeholder = () =>
+  <View style={{ width: 50, height: 50, backgroundColor: 'darkgrey' }} />
+
+const VAImgWithPlaceholder =
+  Viewport.Aware(
+    Viewport.WithPlaceholder(Image, Placeholder)
+  )
+
+render() {
+  return (
+    <VAImgWithPlaceholder
+      // placeholder={Placeholder} // passing down a placeholder at render time
+      source={{ uri: 'https://facebook.github.io/react-native/img/header_logo.png' }}
+      preTriggerRatio={0.5}
+      retainOnceInViewport={true}
+      style={{ width: 50, height: 50 }} />
+  )
+}
+```
+
+#### Properties
+
+| Prop | Description | Default |
+|---|---|---|
+|**`placeholder`**| Useful for passing down a placeholder at render time. | `null` |
+|**`retainOnceInViewport`**| Whether to keep the wrapped component displayed once it enters the viewport. | `false` |
