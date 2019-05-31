@@ -1,6 +1,6 @@
 {
   "name": "@housing/react-native-viewport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Skele custom components for React and React Native.",
   "react-native": "src/index.js",
   "main": "dist/es5/index.js",
@@ -21,9 +21,6 @@
     "prop-types": "15.x || 16.x",
     "react": "15.x || 16.x",
     "react-native": ">= 0.40.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "bugs": {
     "url": "https://github.com/housinghq/react-native-viewport/issues"
