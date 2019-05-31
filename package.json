@@ -1,0 +1,28 @@
+{
+  "name": "@housing/react-native-viewport",
+  "version": "1.0.0",
+  "description": "Skele custom components for React and React Native.",
+  "react-native": "src/index.js",
+  "main": "dist/es5/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/housinghq/react-native-viewport.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "components",
+    "netcetera"
+  ],
+  "author": "Kishan Patel",
+  "license": "MIT",
+  "homepage": "https://netcetera.gitbooks.io/skele/",
+  "peerDependencies": {
+    "prop-types": "15.x || 16.x",
+    "react": "15.x || 16.x",
+    "react-native": ">= 0.40.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
